@@ -42,7 +42,7 @@ export enum FaucetApiHost {
 }
 
 export enum ValidatorApiHost {
-  TESTNET = 'https://test-dydx.kingnodes.com',
+  TESTNET = 'https://test-dydx-rpc.kingnodes.com',
   STAGING = 'https://validator.v4staging.dydx.exchange',
   LOCAL = 'http://localhost:26657',
   // For the deployment by DYDX token holders
@@ -84,6 +84,9 @@ export const TYPE_URL_MSG_UPDATE_CLOB_PAIR = '/dydxprotocol.clob.MsgUpdateClobPa
 
 // x/delaymsg
 export const TYPE_URL_MSG_DELAY_MESSAGE = '/dydxprotocol.delaymsg.MsgDelayMessage';
+
+// x/listing
+export const TYPE_URL_MSG_CREATE_MARKET_PERMISSIONLESS = '/dydxprotocol.listing.MsgCreateMarketPermissionless';
 
 // x/perpetuals
 export const TYPE_URL_MSG_CREATE_PERPETUAL = '/dydxprotocol.perpetuals.MsgCreatePerpetual';
